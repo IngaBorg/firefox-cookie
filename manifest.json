@@ -6,5 +6,11 @@
   "permissions": ["<all_urls>", "cookies"],
   "background": {
     "scripts": ["main.js"]
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.liveless.test/test.php"],
+      "js": ["execute.js"]
+    }
+  ]
 }
